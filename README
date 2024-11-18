@@ -1,0 +1,21 @@
+Minitel 3.1
+
+But : 1ère étape 
+
+-> afficher les informations systèmes 
+on veille à bien clear le terminal à chaque opération nouvelle 
+
+avec un mvprintw on va print des petites phrases pour diriger le user dans son utilisation de Minitel
+
+mvprintw est une fonction de la bibliothèque ncurses en C, utilisée pour afficher du texte à une position précise dans le terminal.
+Dans une application ncurses, vous ne pouvez pas afficher du texte directement avec printf ou des fonctions classiques d'I/O, car ncurses redessine l'interface en mode texte.
+
+mvprintw permet :
+
+De contrôler la position d affichage, de formater du texte et de rester compatible avec ncurses.
+
+ ex : int mvprintw(int y, int x, const char *fmt, ...);
+
+y : La ligne où afficher le texte 
+x : La colonne où afficher le texte
+fmt : Une chaîne de format (similaire à printf) suivie des arguments nécessaires
