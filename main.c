@@ -42,6 +42,7 @@ int main() {
     return 0;
 }
 
+// penser à séparer le code pour que ce soit plus propre 
 
 void display_info() {
     clear();
